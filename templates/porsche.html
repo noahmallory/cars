@@ -1,0 +1,40 @@
+<!-- templates/cars.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/basic_css.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Porsche Gallery</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/pictures">Back to Picture Home</a>
+            <a href="/bikes">Ferrari</a>
+            <a href="/trucks">Lamborghini</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Our Porsche Collection</h2>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='images/car1.jpg') }}" alt="Car1" class="car-image" width="300">
+			<p class="price">$2,000,000</p>  <!-- Price under the image -->
+            <img src="{{ url_for('static', filename='images/car2.jpg') }}" alt="Car2" class="car-image" width="300">
+			<p class="price">$250,000</p>  <!-- Price under the image -->
+            <img src="{{ url_for('static', filename='images/car3.jpg') }}" alt="Car3" class="car-image" width="280">
+			<p class="price">$150,000</p>  <!-- Price under the image -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Noah Mallory</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

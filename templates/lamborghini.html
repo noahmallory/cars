@@ -1,0 +1,42 @@
+<!-- templates/lamborghini.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/basic_css.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Lamborghini Gallery</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/pictures">Back to Picture Home</a>
+            <a href="/cars">Porsche</a>
+            <a href="/bikes">Ferrari</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Our Lamborghini Collection</h2>
+        <div class="gallery">
+            <!-- Replace these with actual Lamborghini images -->
+            <img src="{{ url_for('static', filename='images/lamborghini1.jpg') }}" alt="Lamborghini1" class="car-image" width="305">
+			<p class="price">$700,000</p>
+            <img src="{{ url_for('static', filename='images/lamborghini2.jpg') }}" alt="Lamborghini2" class="car-image" width="300">
+			<p class="price">$450,000</p>
+            <img src="{{ url_for('static', filename='images/lamborghini3.jpg') }}" alt="Lamborghini3" class="car-image" width="300">
+			<p class="price">$400,000</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Noah Mallory</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

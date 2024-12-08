@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/basic_css.css') }}">
+<body>
+    <header>
+        <h1> Check Out Your New Vehicle!</h1>
+        <nav>
+            <a href="/">Home</a>
+            
+        
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Our Vehicle Types</h2>
+        <p>Click the buttons below to explore pictures of different vehicle categories:</p>
+
+        <!-- Button Group for Navigation -->
+        <div class="button-group">
+            <a href="/cars" class="button">Porsche</a>
+            <a href="/bikes" class="button">Ferrari</a>
+            <a href="/trucks" class="button">Lamborghini</a>
+        </div>
+
+        <div class="gallery">
+            <!-- Example images, adjust this part to your content -->
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Noah Mallory</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

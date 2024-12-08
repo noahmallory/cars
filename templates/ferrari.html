@@ -1,0 +1,41 @@
+<!-- templates/ferrari.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/basic_css.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ferrari Gallery</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/pictures">Back to Picture Home</a>
+            <a href="/cars">Porsche</a>
+            <a href="/trucks">Lamborghini</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Our Ferrari Collection</h2>
+        <div class="gallery">
+            <!-- Replace these with actual Ferrari images -->
+            <img src="{{ url_for('static', filename='images/ferrari1.jpg') }}" alt="Ferrari1" class="car-image" width="295">
+			<p class="price">$650,000</p>
+            <img src="{{ url_for('static', filename='images/ferrari2.jpg') }}" alt="Ferrari2" class="car-image" width="315">
+			<p class="price">$600,000</p>
+            <img src="{{ url_for('static', filename='images/ferrari3.jpg') }}" alt="Ferrari3" class="car-image" width="280">
+			<p class="price">$400,000</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Noah Mallory</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
